@@ -1,0 +1,79 @@
+.home-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-text-col h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.home-text-col p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  color: #555;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+    .home-text-col{
+        margin-top: 3rem;
+    }
+    .home-img-col img{
+        width: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+    .home-img-col img{
+        width: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+
+  .home-text-col p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+    .home-text-col h2{
+        font-size: 3rem;
+    }
+}
+@media (min-width:1400px) {
+    .home-img-col img{
+        width: 450px;
+    }
+}
+.home-text-col > div{
+    margin-left: auto;
+    margin-right: auto;
+}
+.home-text-col button{
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+}
+
+.home-text-col button:hover,.home-text-col button:active{
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    border: #000000 !important;
+}

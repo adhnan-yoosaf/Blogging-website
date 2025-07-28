@@ -1,0 +1,24 @@
+# Dependencies
+**/node_modules/
+**/.pnp/
+.pnp.js
+
+# Testing
+/coverage/
+
+# Production builds
+/build/
+
+# Secrets and environment
+.env
+**/.env
+.env.*
+**/.env.*
+
+# System junk
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

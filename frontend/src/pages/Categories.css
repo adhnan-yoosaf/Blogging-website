@@ -1,0 +1,21 @@
+.categories-slider{
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+    margin-top: 20px;
+    overflow-x: auto;
+    position: relative;
+    padding: 0 50px;
+}
+
+.categories-slider::-webkit-scrollbar{
+    display: none;
+}
+
+.chevron-btn-left{
+    left: 0;
+}
+
+.chevron-btn-right{
+    right: 0;
+}

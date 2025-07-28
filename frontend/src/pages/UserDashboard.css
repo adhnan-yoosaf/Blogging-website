@@ -1,0 +1,12 @@
+
+.recent-blogs-table .blog-title{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.recent-blogs-table .blog-title:hover{
+    text-decoration: underline;
+}
+.recent-blogs-table svg{
+    cursor: pointer;
+}
