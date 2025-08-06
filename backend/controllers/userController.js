@@ -76,11 +76,16 @@ exports.userLogin = async (req, res) => {
         const userData = user.toObject();
         delete userData.password
 
-        res.status(200).cookie('token', token).json({
-            success: true,
-            message: 'User login successfull',
-            user: userData
-        })
+        res.status(200).cookie('token', token, {
+          httpOnly: true,
+          secure: true,
+          sameSite: 'None',
+          maxAge: 30 * 60 * 1000 // 30 minutes
+        }).json({
+          success: true,
+          message: 'User login successful',
+          user: userData
+        });
     } catch (error) {
         res.status(500).json({
             success: false,
